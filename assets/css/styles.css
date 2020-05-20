@@ -1,0 +1,68 @@
+body {
+	background: #000;
+}
+
+.pokeball-back {
+	position: fixed;
+	top: 50%;
+	left: -50%;
+	transform: translateY(-50%);
+	z-index: -100;
+	width: 100%;
+	opacity: 0.5;
+}
+
+.input-filter {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 500;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 25px;
+	padding-right: 25px;
+	border: 0;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color: #4b4949;
+	color: #fff;
+}
+
+.input-filter::placeholder {
+	color: #fff;
+}
+
+.input-filter:focus {
+	outline: none;
+}
+
+.poke-list {
+	overflow-x: hidden;
+	float: right;
+	margin-top: 50px;
+	width: 30%;
+	text-transform: capitalize;
+	letter-spacing: 1px;
+	opacity: 0.95;
+}
+
+.poke-list-item {
+	position: relative;
+	display: flex;
+	align-items: center;
+	border: 1px solid #000;
+	border-top-left-radius: 20px;
+	cursor: pointer;
+	list-style: none;
+	background-color: #333;
+	color: #fff;
+}
+
+.poke-list-item:hover {
+	background-color: #555;
+}
+
+.poke-list-item img {
+	margin: 10px;
+	width: 40px;
+}
